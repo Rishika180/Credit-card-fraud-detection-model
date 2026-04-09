@@ -1,27 +1,115 @@
+# 💳 Credit Card Fraud Detection System
 
-# Credit Card Fraud Detection Model
+## 📌 Overview
 
-This repository contains a credit card fraud detection model that uses machine learning algorithms to detect fraudulent transactions. The model was built using the Python programming language and scikit-learn library.
+This project is a **Machine Learning-based Credit Card Fraud Detection System** that predicts whether a transaction is **fraudulent or legitimate**.
 
-The dataset used for training and testing the model is the Credit Card Fraud Detection dataset from Kaggle. The dataset contains credit card transactions a total of 284315 transactions, of which 492 (0.17%) are fraudulent.
+The model is trained on a real-world dataset and deployed using an interactive **Streamlit web application** for easy testing and demonstration.
 
-Here is the link to the dataset:
-https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+---
+
+## 🚀 Features
+
+* Detects fraudulent transactions in real-time
+* User-friendly web interface using Streamlit
+* Handles imbalanced dataset using SMOTE
+* Pre-trained ML model for quick predictions
+* Sample input buttons for easy demo
+
+---
+
+## 🧠 Tech Stack
+
+* **Programming Language:** Python
+* **Libraries:** NumPy, Pandas, Scikit-learn, Imbalanced-learn
+* **Frontend/UI:** Streamlit
+* **Model Storage:** Pickle (.pkl)
+
+---
+
+## ⚙️ Machine Learning Algorithm
+
+* **Random Forest Classifier**
+* Used for classification of transactions into:
+
+  * Legitimate (0)
+  * Fraudulent (1)
+
+---
+
+## 📊 Dataset
+
+* Source: Kaggle Credit Card Fraud Dataset
+* Contains anonymized features (V1 to V28) and transaction amount
+* Highly imbalanced dataset (fraud cases are very rare)
+
+---
+
+## 🖥️ How It Works
+
+1. User enters transaction details (29 features)
+2. Input is processed and converted into numerical format
+3. Pre-trained model predicts the result
+4. Output is displayed as:
+
+   * ✅ Legitimate Transaction
+   * 🚨 Fraudulent Transaction
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Rishika180/credit-card-fraud-detection.git
+cd credit-card-fraud-detection
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📷 Demo
+
+The application provides:
+
+* Input field for transaction data
+* Sample data buttons for quick testing
+* Real-time prediction results
+
+---
+
+## 📈 Future Improvements
+
+* Add transaction history tracking
+* Improve UI/UX design
+* Deploy on cloud (Streamlit Cloud / AWS)
+* Use deep learning models for better accuracy
+
+---
+
+## 👩‍💻 Author
+
+**Rishika Agrawal**
+
+---
+
+## ⭐ Conclusion
+
+This project demonstrates how machine learning can be applied to **detect financial fraud efficiently** and help in building secure digital payment systems.
 
 
-The model uses a supervised learning algorithm called Random Forest Classifier to classify transactions as either fraudulent or non-fraudulent. SMOTE is used to handle imbalanced datasets like the credit card fraud dataset.
-
-The model achieved an accuracy of 99.98%, precision of 99.97%, and recall score was 1 on the test set.
-
-
-
-
-### Deployment
-Inorder to deploy the fraud detection model, I have used streamlit.
-
-Put all the V1-V28 features along with the amount(Normalized value) and predict whether it is a fraudulent or a legitimate transactions.
-
-V1-V28: may be result of a PCA Dimensionality reduction to protect user identities and sensitive features.
 
 
 
@@ -29,13 +117,3 @@ V1-V28: may be result of a PCA Dimensionality reduction to protect user identiti
 
 
 
-
-![alt text](https://img.shields.io/badge/Python-3.11-orange)   ![alt text](https://img.shields.io/badge/Streamlit-Share-brightgreen)
-###  Acknowledgements
-
-The dataset used in this project was obtained from Kaggle.
-The code for this project was inspired by the Credit Card Fraud Detection project by Data Flair.
-
-https://www.youtube.com/watch?v=239TaYSQI-s&t=1440s
-
-Feel free to contribute to the project by opening pull requests or creating issues if you encounter any problems.
